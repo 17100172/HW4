@@ -12,6 +12,8 @@ Rottenpotatoes::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  # match 'movies/:id/dir' => 'movies#dir'
+  get 'movies/:id/dir' => 'movies#dir', as: :dir_movie
   resources :movies
 
   # Sample resource route with options:
